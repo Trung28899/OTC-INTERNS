@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  padding-bottom: 500px;
 }
 
 .topSection {
@@ -13,6 +12,10 @@
 }
 
 .topSection hr {
+}
+
+.gallerySection {
+  position: relative;
 }
 
 .gallerySection {
