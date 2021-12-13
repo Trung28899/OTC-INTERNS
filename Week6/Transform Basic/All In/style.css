@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  background-color: #372d4d;
+  perspective: 1000px;
+}
+
+img {
+  width: 150px;
+}
+
+.robot {
+}
