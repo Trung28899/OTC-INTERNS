@@ -21,6 +21,8 @@ button {
   font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
+
+  transition: 1s ease-in;
 }
 
 button:hover {
