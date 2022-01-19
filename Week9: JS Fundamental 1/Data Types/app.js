@@ -1,5 +1,5 @@
 // II. Data Types:
-// String, Numbers, Boolean, null, undefined
+// String, Numbers, Boolean, Object, undefined
 
 const name = "John"; // can use either single or double quote
 const agee = 30;

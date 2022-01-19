@@ -13,7 +13,7 @@ const myAge = 34;
 // myAge = 35;
 
 console.log(age); // see on console 31
-console.log(newAge); // see 32 on console
+console.log(newAge); // see 33 on console
 console.log(myAge);
 
 // difference between var vs let => different in scope
