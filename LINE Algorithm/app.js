@@ -1,3 +1,13 @@
+/*
+
+  GETTING AN ARRAY OF SUBSTRING FROM A STRING
+  EACH SUBSTRING SHOULDN'T HAVE A REPEATED CHARACTER
+
+  INPUT: A STRING
+  OUTPUT: THE LENGTH OF AN ARRAY
+
+*/
+
 // Given a string and a character, function will return an array with the
 // indexes of a character in that string
 function findIndexArray(str, character) {
