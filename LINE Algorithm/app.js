@@ -73,3 +73,5 @@ function solution(str) {
 }
 
 solution("helloworld");
+
+// console.log(subStringArray);
