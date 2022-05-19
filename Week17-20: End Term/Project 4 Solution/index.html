@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--MAIN CONTAINER SECTION-->
+    <div class="container">
+      <div class="topSection">
+        <h2 class="galleryTitle"></h2>
+
+        <div class="topSymbols">
+          <i class="fas fa-edit"></i>
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshowContainer">
+        <!--  Contain Images for the carousel -->
+        <div class="imagesSection"></div>
+
+        <!--  Contain bottom sliders for image navigation in the carousel -->
+        <div class="bottom-sliders">
+          <!-- <span class="dot2" onclick="currentSlideCarousel(1)"></span>
+          <span class="dot2" onclick="currentSlideCarousel(2)"></span>
+          <span class="dot2" onclick="currentSlideCarousel(3)"></span> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prevSlide" onclick="plusSlidesCarousel(-1)">&#10094;</a>
+        <a class="nextSlide" onclick="plusSlidesCarousel(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <!--MODAL SECTION-->
+    <div class="modal">
+      <h1 class="modalTitle"></h1>
+
+      <form class="modalForm">
+        <label id="titleLabel">TITLE</label>
+        <input type="text" id="title" name="title" placeholder="" value="" />
+      </form>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!--  Contain Images for the carousel -->
+        <div class="imagesDiv"></div>
+
+        <!--  Contain bottom sliders for image navigation in the carousel -->
+        <div class="btm-sliders"></div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div class="btnContainer">
+        <button class="addImageBtn">
+          <i class="fas fa-image"></i> Add Images
+        </button>
+
+        <label id="buttonLabel">*The image size must not exceed 100MB</label>
+        <button class="saveChangesBtn" onclick="editClosed()">
+          Save Changes
+        </button>
+      </div>
+
+      <input id="default-btn" type="file" hidden />
+    </div>
+
+    <!--BACKDROP SECTION-->
+    <div class="backDrop"></div>
+
+    <script>
+      // Variable that is shared accross all javascript files
+      var data = {
+        title: "Title",
+        images: [],
+      };
+    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/modal_carousel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --primary: white;
+  --gray: rgb(209, 209, 209);
+  --grey: rgba(255, 255, 255, 0.5);
+  --middleGray: rgb(158, 158, 158);
+  --darkGray: rgb(104, 104, 104);
+  --blue: #0275d8;
+  --red: #d9534f;
+  --black: rgba(0, 0, 0, 0.8);
+  --white: white;
+}
+
+body {
+  position: relative;
+  background-color: var(--gray);
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  background-color: var(--primary);
+  margin: 10vh auto;
+  border-radius: 12px;
+  padding-bottom: 25px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 450px !important;
+  margin: 0px auto;
+}
+
+.topSymbols {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 65px;
+  margin-right: 10px;
+}
+
+.topSymbols i {
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 1.1rem;
+}
+
+.topSymbols i:hover:nth-child(1) {
+  color: var(--blue);
+}
+
+.topSymbols i:hover:nth-child(2) {
+  color: var(--red);
+}
